@@ -15,7 +15,7 @@ def decompose_query(query):
     for part in parts:
         part = part.strip()
 
-        if len(part.split()) >= 3:
+        if len(part.split()) >= 2:
             subqueries.append(part)
 
     if not subqueries:

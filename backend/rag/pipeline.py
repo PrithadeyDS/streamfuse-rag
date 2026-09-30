@@ -86,6 +86,7 @@ class RAGEngine:
                 "decision": "SUPPRESS",
                 "refinement": False,
                 "query": session["query"],
+                "answer": session["answer"],
                 "subqueries": [],
                 "evidence": session["evidence"],
                 "citations": session["citations"],
@@ -163,13 +164,23 @@ class RAGEngine:
         # --------------------------------
 
         citations = []
+        seen_citations = set()
 
         for evidence in unique_evidence:
 
-            citations.append({
-                "doc_id": evidence["doc_id"],
-                "section": evidence["section"]
-            })
+          citation_key = (
+            evidence["doc_id"],
+            evidence["section"]
+           )
+
+        if citation_key not in seen_citations:
+
+              seen_citations.add(citation_key)
+
+              citations.append({
+               "doc_id": evidence["doc_id"],
+               "section": evidence["section"]
+        })
 
 
         retrieval_end = time.perf_counter()
