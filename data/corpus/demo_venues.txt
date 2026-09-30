@@ -1,0 +1,12 @@
+Venue A is located in Pune and can accommodate up to 40 attendees.
+Venue A provides lunch, tea and vegetarian catering options.
+Venue A allows cancellation up to 7 days before the event with a full refund.
+
+Venue B is located in Pune and can accommodate up to 80 attendees.
+Venue B provides buffet catering and custom dietary options.
+Venue B allows cancellation up to 14 days before the event with a full refund.
+Cancellations within 14 days receive a 50 percent refund.
+
+Venue C is located in Bengaluru and can accommodate up to 60 attendees.
+Venue C offers breakfast and lunch catering.
+Venue C requires cancellation at least 10 days before the event.
